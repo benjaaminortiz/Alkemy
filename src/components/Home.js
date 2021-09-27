@@ -1,9 +1,7 @@
-import React, { Component, useState } from 'react'
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
 import style from '../CSS/Home.module.css'
-import { Spinner} from 'react-bootstrap'
+import { Spinner } from 'react-bootstrap'
 import Teams from './Teams'
-import Result from './Result'
 import { connect } from 'react-redux';
 import Search from './Search';
 import Average from './Average';
@@ -13,11 +11,23 @@ export const API_KEY = process.env.REACT_APP_API_KEY;
 const apiUrl = `https://superheroapi.com/api/${API_KEY}`
 
 const Home = ({ heroes }) => {
- 
+    const [isLoading, setLoading] = useState(true)
+
+    useEffect(() => {
+        if (localStorage.length === 0) {
+
+            window.location.replace('/')
+            setLoading(false);
+
+        }
+        else {
+            setLoading(false)
+        }
+    })
     return (
         <div className={style.main}>
-              <img alt='background' className={style.background} src={wave}></img>
-            {(heroes.length === 0) ? <div className={style.wrapper}>
+            <img alt='background' className={style.background} src={wave}></img>
+            {isLoading ? <div className={style.wrapper}>
                 {<div className={style.loading}>
                     <Spinner animation="border" variant="light" />
                     <h1> Loading heroes... </h1>
@@ -25,14 +35,14 @@ const Home = ({ heroes }) => {
             </div>
                 :
                 <div>
-                <div className={style.title}><h1>SuperHeroAPI!</h1>
-                <div><Search/></div>
-                <div className={style.avg}><Average heroes={heroes}/></div>
-               </div>
-               
-               <div><Teams/></div>
-                           
-           </div> }
+                    <div className={style.title}><h1>SuperHeroAPI!</h1>
+                        <div><Search /></div>
+                        <div className={style.avg}><Average heroes={heroes} /></div>
+                    </div>
+
+                    <div><Teams /></div>
+
+                </div>}
         </div>
     )
 }
