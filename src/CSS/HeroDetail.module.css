@@ -1,0 +1,87 @@
+.main{
+    background: url('../components/Wave.svg')no-repeat  center fixed ;
+   background-size: cover;
+ 
+   
+}
+
+.imgWrapper {
+    width: auto;
+    border-radius: 30px;
+}
+.loading{
+    animation: crescendo 0.5s  ease-in;
+padding-top: 7%;
+padding-bottom: 7%;
+border-radius: 25px;
+background-color: rgba(70,70,70,0.5);
+backdrop-filter: blur(50px);
+}
+.loading h1{
+    color: white !important;
+    margin-top: 30px;
+}
+.loadwrapper {
+    padding: 15%;
+    
+ }
+ .dataWrapper{
+    font-family: 'Ubuntu Condensed';
+    border-radius: 20px;
+ 
+    backdrop-filter: blur(200px) brightness(1.7);
+ }
+ .dataWrapper h6 {
+     font-family: 'IBM Plex Sans Arabic';
+     font-weight: 500;
+     font-size: large;
+     
+ }
+ .appearance{
+     background-color: rgba(255, 255, 255, 0.3);
+     border-radius: 20px;
+ }
+ .appearance h3 {
+     font-size:xx-large;
+ }
+ .appearance h6 {
+     color:rgba(0, 0, 0, 0.6)
+ }
+ .wrapper { 
+  
+    overflow:hidden;
+  }
+  
+  .wrapper div {
+     min-height: 200px;
+     padding: 10px;
+  }
+ 
+  .one {
+    
+    float:left; 
+    margin-right:20px;
+    width:45%;
+  
+  
+  }
+  .two { 
+    color: rgba(255, 255, 255, 0.8);
+   float: center;
+   
+    margin:10px;
+    overflow: hidden;
+    min-height:170px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+  @media screen and (max-width: 900px) {
+     .one { 
+      float: none;
+      margin-right:0;
+      width:auto;
+      border:0;
+      
+    }
+  }

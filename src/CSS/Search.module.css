@@ -1,0 +1,46 @@
+.team{
+    color: rgba(0, 0, 0, 0.5);
+    width: 95%;
+    min-width: 40%;
+   
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(200px) brightness(2);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: auto
+}
+
+.team input {
+    border-radius: 20px;
+    padding: 1rem;
+    border: 1px;
+    margin-bottom: 5px;
+}
+.team input ::placeholder{
+    font-family: 'IBM Plex Sans Arabic';
+}
+.team button {
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px;
+    margin: 15px;
+    font-family: 'IBM Plex Sans Arabic';
+    position: relative;
+    background-color: rgba(255,255,255,0.4);
+    transition: 0.5s;
+    
+}
+.team button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
+.title {
+    font-family: 'IBM Plex Sans Arabic';
+    margin-top: 12px;
+}

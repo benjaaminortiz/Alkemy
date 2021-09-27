@@ -1,0 +1,19 @@
+@keyframes crescendo {
+    0%   {transform: scale(0.8);}
+    100% {transform: scale(1);}
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 18rem !important;
+    border-radius: 25px !important;
+    margin: 15px!important;
+    animation: crescendo 1s  ease-in-out
+  
+}
+.button {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px;
+    margin-bottom: 5px;
+}

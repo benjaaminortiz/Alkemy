@@ -1,0 +1,57 @@
+.main{
+  display: flex;
+  height: auto;
+    
+}
+.main img {
+    height: 100%;
+    width: 100%;
+    display:block;
+    z-index: 0;
+    position: absolute;
+
+}
+.main h2 {
+    position: relative;
+    bottom: 30px;
+    top:auto;
+    font-family: 'Ubuntu Condensed';
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+}
+.formWrapper {
+    z-index: 11;
+    border-radius: 35px;
+    backdrop-filter: blur(200px) brightness(2);
+    width: 60%;
+    height: 500px !important;
+    padding: 9%;
+    margin-top: 100px;
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+   ;
+}
+.input {
+    background-color: rgba(255,255,255,0.3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input::placeholder {
+    color: white
+}
+ .label {
+    font-family: 'Ubuntu Condensed';
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+    font-size: larger
+ }
+
+ .alerts{ 
+  
+     filter: brightness(0.4);
+     max-width:fit-content;
+     max-height: initial;
+     
+     
+ }

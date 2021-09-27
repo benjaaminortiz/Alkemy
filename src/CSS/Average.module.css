@@ -1,0 +1,12 @@
+
+.avg {
+    color: white;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem;
+    width: fit-content;
+    backdrop-filter: blur(200px) brightness(2);
+    font-size: xx-large;
+    margin-left: 3%;
+    margin-right: 3%
+}

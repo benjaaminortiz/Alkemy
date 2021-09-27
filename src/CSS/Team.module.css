@@ -1,0 +1,123 @@
+@keyframes crescendo {
+    0%   {transform: scale(.8);}
+    100% {transform: scale(1);}
+  }
+
+
+  
+
+.close{
+    position: relative;
+    bottom: 20%;
+    left: 36%;
+}
+.close button {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 500;
+    padding: 2%;
+    position: relative;
+    top: 48px;
+    background-color: rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+    border:  0px rgba(0,0,0,0.3);
+ 
+}
+.close :hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.main {
+    float:center;
+   overflow: hidden;
+   width: 30rem !important;
+    max-height: 200px !;
+     margin: 10px;
+     margin-bottom:25px;
+     border-radius: 20px;
+      background-color: rgba(255,255,255, .5);
+      display: flex;
+      transition: 0.5s;
+  }
+  
+  .img{
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      right: 50px;
+  }
+  
+  .imgwrap{
+      position: static;
+      width: 55%;
+      float:left; 
+    margin-right:20px;
+    
+  }
+  
+  .title{
+    font-family: 'IBM Plex Sans Arabic';
+      font-weight: bolder;
+      position: fixed;
+      margin-left: 30px;
+      font-size: 30px;
+      color: rgba(0,0,0,0.7);
+  
+    
+  }
+  
+  .stats{
+     width: 50%;
+      display: inline-table;
+    position:relative;
+    right: 40px;
+    top: 20px;
+      text-align: left;
+      line-height: 0.1;
+     font-size: 15px;
+    
+      
+  }
+  .text {
+      width: 100%;
+  }
+  
+  .key {
+      font-family: 'IBM Plex Sans Arabic';
+      font-weight:600;
+      display: inline;
+      line-height: 0.1;
+      color: rgba(0,0,0,0.7)
+  }
+  .value {
+      text-align: end;
+      font-weight: 500;
+      font-size: medium;
+  }
+  
+  .textwrap{
+      width: 140%;
+  }
+  
+  .herobadge{
+   padding: 1%;
+   color: rgb(40, 60, 70);
+   font-weight: 600;
+   border-radius: 20px;
+   background-color: #518CCA;
+   position: relative;
+ 
+   left: 35%;
+      top: 10px;
+  }
+  
+  .villainbadge{
+      padding: 3px;
+      color: #66070a;
+      font-weight: 600;
+      border-radius: 20px;
+      background-color: #F0131E;
+      position: relative;
+      left: 35%;
+      top: 10px;
+     }
